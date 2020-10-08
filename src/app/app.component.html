@@ -1,0 +1,96 @@
+<div #miTabla>
+  <table id="mytable">
+    <thead class="thead-dark">
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          Nombre
+        </th>
+        <th>
+          Tamaño
+        </th>
+        <th>
+          Peso
+        </th>
+        <th>Edad1</th>
+        <th>Edad2</th>
+        <th>Edad3</th>
+        <th>Edad4</th>
+        <th>Edad5</th>
+        <th>Edad6</th>
+        <th>Edad7</th>
+        <th>Edad8</th>
+        <th>Edad9</th>
+        <th>Edad10</th>
+        <th>Edad11</th>
+        <th>Edad12</th>
+        <th>Edad13</th>
+        <th>Edad14</th>
+        <th>Edad15</th>
+        <th>Edad16</th>
+        <th>Edad17</th>
+        <th>Edad18</th>
+        <th>Edad19</th>
+        <th>Edad20</th>
+        <th>Edad21</th>
+        <th>Edad22</th>
+        <th>Edad23</th>
+        <th>Edad24</th>
+        <th>Edad25</th>
+        <th>Edad26</th>
+        <th>Edad27</th>
+        <th>Edad28</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let elemento of datosTabla">
+        <td>{{elemento.id}}</td>
+        <td>{{elemento.nombre}}</td>
+        <td>{{elemento.tamanio}}</td>
+        <td>{{elemento.peso}}</td>
+        <td>{{elemento.edad1}}</td>
+        <td>{{elemento.edad2}}</td>
+        <td>{{elemento.edad3}}</td>
+        <td>{{elemento.edad4}}</td>
+        <td>{{elemento.edad5}}</td>
+        <td>{{elemento.edad6}}</td>
+        <td>{{elemento.edad7}}</td>
+        <td>{{elemento.edad8}}</td>
+        <td>{{elemento.edad9}}</td>
+        <td>{{elemento.edad10}}</td>
+        <td>{{elemento.edad11}}</td>
+        <td>{{elemento.edad12}}</td>
+        <td>{{elemento.edad13}}</td>
+        <td>{{elemento.edad14}}</td>
+        <td>{{elemento.edad15}}</td>
+        <td>{{elemento.edad16}}</td>
+        <td>{{elemento.edad17}}</td>
+        <td>{{elemento.edad18}}</td>
+        <td>{{elemento.edad19}}</td>
+        <td>{{elemento.edad20}}</td>
+        <td>{{elemento.edad21}}</td>
+        <td>{{elemento.edad22}}</td>
+        <td>{{elemento.edad23}}</td>
+        <td>{{elemento.edad24}}</td>
+        <td>{{elemento.edad25}}</td>
+        <td>{{elemento.edad26}}</td>
+        <td>{{elemento.edad27}}</td>
+        <td>{{elemento.edad28}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<button (click)="exportAs('png')">export as png</button>
+<button (click)="exportAs('csv')">export as csv</button>
+<button (click)="exportAs('xlsx')">export as Excel</button>
+<button (click)="exportAs('xml')">export as xml</button>
+<button (click)="descargarHtml()">descargar html</button>
+
+<!-- <button (click)="exportAsString('pdf', 'portrait')">From String</button>
+<button (click)="exportAs('pdf', 'portrait')">export as pdf</button>
+<button (click)="exportAs('pdf', 'landscape')">export as pdf landscape</button>
+<button (click)="exportAs('txt')">export as txt</button>
+<button (click)="exportAs('docx')">export as MS-Word</button>
+<button (click)="exportAs('json')">export as json</button> -->
